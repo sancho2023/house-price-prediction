@@ -52,10 +52,18 @@ A neural network with hyperparameters selected using Keras Tuner.
 
 ## Results
 
-              Model 	            MAE     	RMSE       	R2
-0 	Optimized Neural Network 	22562.2910 	35632.8801 	0.8345
-1 	Baseline Neural Network 	24288.1680 	38406.5444 	0.8077
-2 	Regularized Neural Network 	28697.7461 	44389.3047 	0.7431
+The optimized neural network achieved the best predictive performance
+among the three evaluated models.
+
+| Model | MAE | RMSE | R-squared |
+|---|---:|---:|---:|
+| Optimized Neural Network | 22,562.29 | 35,632.88 | 0.8345 |
+| Baseline Neural Network | 24,288.17 | 38,406.54 | 0.8077 |
+| Regularized Neural Network | 28,697.75 | 44,389.30 | 0.7431 |
+
+The optimized neural network achieved the lowest MAE and RMSE and
+the highest R-squared, indicating the strongest predictive performance
+on the validation set.
 
 The best-performing model will be identified based on validation performance, with lower MAE and RMSE and higher R-squared indicating better predictive accuracy.
 
